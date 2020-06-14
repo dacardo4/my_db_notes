@@ -23,8 +23,9 @@ col_name VARCHAR(10) ... -- to the end of the column name.
     ENUM('M','F');
     PRIMARY KEY;
     AUTO_INCREMENT;
-
 -- DATE -> fecha
 -- DATETIME -> fecha y Hora (HMS)
 -- current_timestamp = NOW()
 -- IMG 009 Foreing Key
+ALTER TABLE table_name ADD col_name INT UNSIGNED NOT NULL;
+ALTER TABLE table_name DROP COLUMN col_name;
