@@ -11,3 +11,10 @@ mysql.server restart
 
 -- 003 Vars
 system clear
+
+-- 004 Create table
+
+-- 007 sql file in mysql terminal
+
+-- 008 sql server consults faster 
+
