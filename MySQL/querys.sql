@@ -29,3 +29,19 @@ col_name VARCHAR(10) ... -- to the end of the column name.
 -- IMG 009 Foreing Key
 ALTER TABLE table_name ADD col_name INT UNSIGNED NOT NULL;
 ALTER TABLE table_name DROP COLUMN col_name;
+SELECT * FROM table_name;
+SELECT * FROM table_name\G; -- better format to read
+SELECT * FROM table_name WHERE col_name ?? 'some_value'; -- ?? => <,>,<=,>=,=,!=,<>
+SELECT * FROM table_name WHERE col_name1 = 'value1' AND col_name2 = 'value2'; -- AND,OR,NOT
+SELECT * FROM table_name WHERE col_name IS NULL;
+SELECT * FROM table_name WHERE col_name <=> NULL; -- => IS NOT NULL
+SELECT * FROM table_name WHERE col_name BETWEEN 'value1' AND 'value2';
+SELECT * FROM table_name WHERE col_name IN ('value1', 'value2'); -- All values you want
+SELECT DISTINCT col_name FROM table_name; -- All values without repeat
+SELECT col_name AS myAlias FROM table_name; -- => SELECT col_name myAlias FROM table_name;
+UPDATE table_name SET col_name1 = 'new_value1', col_name1 = 'new_value1';
+UPDATE table_name SET col_name = 'new_value' WHERE col_name = 'value';
+DELETE FROM table_name; -- delete all
+DELETE FROM table_name WHERE col_name = 'value';
+-- IMG 010 delete cascade
+TRUNCATE TABLE table_name; -- without WHERE and auot_increments init in 1
