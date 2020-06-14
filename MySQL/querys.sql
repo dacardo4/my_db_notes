@@ -44,4 +44,24 @@ UPDATE table_name SET col_name = 'new_value' WHERE col_name = 'value';
 DELETE FROM table_name; -- delete all
 DELETE FROM table_name WHERE col_name = 'value';
 -- IMG 010 delete cascade
-TRUNCATE TABLE table_name; -- without WHERE and auot_increments init in 1
+TRUNCATE TABLE table_name; -- without WHERE and auto_increments init in 1
+SELECT CONCAT(col_name1,' ',col_name2) AS new_name FROM table_name;
+SELECT * FROM table_name WHERE LENGTH(some_value) > 'some_value';
+SELECT UPPER(col_name), LOWER(col_name) FROM table_name;
+SELECT TRIM('          cadena con espacios al principio y al final               ');
+SELECT LEFT('some_value',5) AS sub_izq, RIGHT('some_value',10) AS sub_der;
+SELECT RAND(); -- random
+SELECT ROUND(RAND()*100); -- random
+SELECT TRUNCATE(1.141516,3);
+SELECT POW(2, 16); -- => POWER -> 2^16
+SELECT NOW();
+SET @now = NOW();
+SELECT SECOND(@now); -- MINUTE,HOUR,MONTH,YEAR
+SELECT DAYOFWEEK(@now); -- DAYOFMONTH,DAYOFYEAR
+SELECT DATE('corect_valueDMY');
+SELECT CURDATE(); -- today date
+SELECT @now + INTERVAL 30 DAY; -- SECOND,MINUTE,HOUR,DAY,WEEK,MONTH,YEAR
+SELECT IF ( 'boolean_value with col_name','if boolean_values TRUE', 'if boolean_values FALSE') FROM table_name;
+SELECT IFNULL(col_name,'value if col_name is null') FROM table_name;
+-- 011 Functions and DELIMITER
+DROP FUNCTION function_name;
