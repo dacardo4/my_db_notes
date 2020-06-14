@@ -14,3 +14,17 @@ SELECT * FROM table_name;
 -- IMG 006 (insert n registers)
 DROP TABLE IF EXISTS db_name;
 CREATE DATABASE IF NOT EXISTS db_name;
+-- > 
+col_name VARCHAR(10) ... -- to the end of the column name.
+    NOT NULL; 
+    UNIQUE;
+    DEFAULT data_default;
+    INT UNSIGNED;
+    ENUM('M','F');
+    PRIMARY KEY;
+    AUTO_INCREMENT;
+
+-- DATE -> fecha
+-- DATETIME -> fecha y Hora (HMS)
+-- current_timestamp = NOW()
+-- IMG 009 Foreing Key
