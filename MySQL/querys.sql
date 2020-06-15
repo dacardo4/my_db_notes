@@ -65,3 +65,22 @@ SELECT IF ( 'boolean_value with col_name','if boolean_values TRUE', 'if boolean_
 SELECT IFNULL(col_name,'value if col_name is null') FROM table_name;
 -- 011 Functions and DELIMITER
 DROP FUNCTION function_name;
+SELECT * FROM table_name WHERE col_name LIKE 'some_value%'; -- 'some_value%','%some_value','%some_value%'
+SELECT * FROM table_name WHERE col_name LIKE '__b__'; -- lenght 5 and b in thirt place
+SELECT * FROM table_name WHERE col_name REGEXP '^[HL]'; -- col_name begin with H or L
+SELECT * FROM table_name ORDER BY col_name DESC; -- ASC,DECS
+SELECT * FROM table_name ORDER BY col_name1 AND col_name2 DESC; 
+SELECT * FROM table_name LIMIT 'limit_value'; 
+SELECT * FROM table_name LIMIT 'num_value_begin','limit_value'; 
+SELECT COUNT(*) FROM table_name;
+SELECT COUNT(*) FROM table_name WHERE col_name IS NOT NULL;
+SELECT COUNT(col_name) FROM table_name; -- the same that the sentence before this
+SELECT SUM(col_name) FROM table_name; -- SUM all values
+SELECT MAX(col_name) FROM table_name; -- MAX value of all values
+SELECT MIN(col_name) FROM table_name; -- MIN value of all values
+SELECT AVG(col_name) FROM table_name; -- AVG value of all values
+SELECT autor_id, SUM(ventas) FROM libros GROUP BY autor_id;
+SELECT autor_id, SUM(ventas) FROM libros GROUP BY autor_id HAVING SUM(ventas) > 100;
+SELECT col_name FROM table_name UNION SELECT col_name1 FROM table_name1;
+-- 012 subconsulting
+EXISTS(SELECT ...); -- true if have at least 1 register
