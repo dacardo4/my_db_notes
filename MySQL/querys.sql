@@ -99,4 +99,6 @@ DROP PROCEDURE procedure_name('params');
 -- IMG 023 Create Procedure With 'Return' output
 -- IMG 024 Create Procedure With IF conditions
 -- IMG 025 Create Procedure With case conditions
--- IMG 025 Create Procedure With cilces -> while, repeat
+-- IMG 026 Create Procedure With cilces -> while, repeat
+-- IMG 027 Create transaction
+-- IMG 028 Create procedure with transaction
