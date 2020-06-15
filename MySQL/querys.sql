@@ -102,3 +102,8 @@ DROP PROCEDURE procedure_name('params');
 -- IMG 026 Create Procedure With cilces -> while, repeat
 -- IMG 027 Create transaction
 -- IMG 028 Create procedure with transaction
+-- IMG 029 Create trigger
+SHOW TRIGGERS\G;
+DROP TRIGGER IF EXISTS triggers_name;
+
+-- ?? Events, Cursors
