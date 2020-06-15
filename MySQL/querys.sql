@@ -90,3 +90,13 @@ EXISTS(SELECT ...); -- true if have at least 1 register
 -- IMG 016 RIGHT JOIN
 -- IMG 017 MULTIPLE JOIN
 -- IMG 018 CROSS JOIN
+-- IMG 019 Create View
+-- IMG 020 Update Views
+-- IMG 021 List Procedures
+-- IMG 022 Create Procedure
+CALL procedure_name('params');
+DROP PROCEDURE procedure_name('params');
+-- IMG 023 Create Procedure With 'Return' output
+-- IMG 024 Create Procedure With IF conditions
+-- IMG 025 Create Procedure With case conditions
+-- IMG 025 Create Procedure With cilces -> while, repeat
