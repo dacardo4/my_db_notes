@@ -63,7 +63,7 @@ SELECT CURDATE(); -- today date
 SELECT @now + INTERVAL 30 DAY; -- SECOND,MINUTE,HOUR,DAY,WEEK,MONTH,YEAR
 SELECT IF ( 'boolean_value with col_name','if boolean_values TRUE', 'if boolean_values FALSE') FROM table_name;
 SELECT IFNULL(col_name,'value if col_name is null') FROM table_name;
--- 011 Functions and DELIMITER
+-- IMG 011 Functions and DELIMITER
 DROP FUNCTION function_name;
 SELECT * FROM table_name WHERE col_name LIKE 'some_value%'; -- 'some_value%','%some_value','%some_value%'
 SELECT * FROM table_name WHERE col_name LIKE '__b__'; -- lenght 5 and b in thirt place
@@ -82,5 +82,11 @@ SELECT AVG(col_name) FROM table_name; -- AVG value of all values
 SELECT autor_id, SUM(ventas) FROM libros GROUP BY autor_id;
 SELECT autor_id, SUM(ventas) FROM libros GROUP BY autor_id HAVING SUM(ventas) > 100;
 SELECT col_name FROM table_name UNION SELECT col_name1 FROM table_name1;
--- 012 subconsulting
+-- IMG 012 subconsulting
 EXISTS(SELECT ...); -- true if have at least 1 register
+-- IMG 013 INNER JOIN
+-- IMG 014 INNER JOIN USING
+-- IMG 015 LEFT JOIN
+-- IMG 016 RIGHT JOIN
+-- IMG 017 MULTIPLE JOIN
+-- IMG 018 CROSS JOIN
